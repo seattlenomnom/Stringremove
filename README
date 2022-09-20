@@ -1,0 +1,10 @@
+/* README for stringremove.
+*  stringremove is an exercise from Kochan, Stephen, "Programming in C 3rd ed",
+*page 231, no. 6. stringremove is a progra that deletes a number of character
+*from within a given string. The function itself has 3 parameters, 1.) s the
+*string, 2.) the starting index within s, 3.) the number of chars to delete.
+*We then, "close up", the string (remove blanks).
+*
+* Programmer: Mark Crapser
+*
+*/
