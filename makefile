@@ -1,4 +1,4 @@
 # makefile for stringremove
 #
 stringremove : stringremove.c
-	gcc -g stringremove -o ./Build/stringremove
+	gcc -g stringremove.c -o ./Build/stringremove
