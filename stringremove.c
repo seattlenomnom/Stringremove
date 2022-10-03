@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
 
 void remove_string(char s[], int index, int num_char){
 
-    int region2addr, region2size;
+    int region2addr, region2size, i;
 
     /* calculate region2size */
 
@@ -70,11 +70,12 @@ void remove_string(char s[], int index, int num_char){
     while(s[region2addr + region2size] != '\0')
         ++region2size;
     region2size += 1;
-    printf("region2size is %i\n", region2size);
 
 
+    /* move region2 over num_char */
 
-
+    for(i = 0; i <= region2size; ++i)
+        s[index + i] = s[index + num_char + i];
 
 }
 
