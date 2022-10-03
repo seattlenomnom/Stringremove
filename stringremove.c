@@ -58,14 +58,23 @@ int main(int argc, char *argv[]) {
 }
 
 
+
 void remove_string(char s[], int index, int num_char){
 
+    int region2addr, region2size;
 
-    int i;
-    i = 0;
+    /* calculate region2size */
 
-    for(i = index; i < index + num_char; ++i)
-        s[i] = ' ';
+    region2addr = index + num_char;
+    region2size = 0;
+    while(s[region2addr + region2size] != '\0')
+        ++region2size;
+    region2size += 1;
+    printf("region2size is %i\n", region2size);
+
+
+
+
 
 }
 
